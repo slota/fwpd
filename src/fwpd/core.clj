@@ -35,5 +35,8 @@
   (map :name
   (filter #(>= (:glitter-index %) minimum-glitter) records)))
 
+(defn add-suspect [suspects suspect]
+  (conj suspects suspect))
+
 (defn name-filter [records]
   (map :name (records)))
